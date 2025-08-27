@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "unity-smp",
+	"version": "${version}",
+	"name": "Unity",
+	"description": "This is the mod used in the Unity SMP",
+	"authors": [
+		"Nukea"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/unity-smp/UnitySMP Logo.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"smp.unity.Unity"
+		],
+		"fabric-datagen": [
+			"smp.unity.UnityDataGenerator"
+		]
+	},
+	"mixins": [
+		"unity-smp.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.21.8",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
